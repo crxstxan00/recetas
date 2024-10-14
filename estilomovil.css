@@ -1,0 +1,186 @@
+.grid-container{
+	grid-template-columns: auto;
+	grid-template-areas: 
+		'titulo'
+		'img'
+		'text'
+		'flex'
+		;
+}
+
+/*---------------------------family text------------------------------*/
+
+h1{
+	font-size: 1.6em;
+}
+
+h2{
+	font-size: 1.4em;
+}
+
+/*-------------------------html, body, header y footer---------------*/
+
+header{
+}
+
+body{
+	width: 100%;
+	margin: 0px;
+	border: none;
+}
+
+.buscador{
+	padding-top: 0px;
+}
+
+/*------------------------------barra navegación---------------------*/
+
+nav{
+	font-size: 0.8em;
+	height: 30px;
+}
+
+nav>ul li:hover{
+	transform: rotate(0deg) scale(1.10);
+}
+
+/*--------------------------------index------------------------------*/
+
+.labellogin{
+	color: white;
+}
+
+.imginicio{
+	display: none;
+}
+
+.textinicio{
+	font-size: 1em;
+}
+
+.flex1{
+	width: 250px;
+	margin: 1%;
+}
+
+.imginicio1{
+	height: 200px; 
+	width: 250px;
+}
+
+.flex2{
+	width: 250px;
+	margin: 1%;
+}
+
+.imginicio2{
+	width: 250px;
+	height: 200px;
+}
+
+.flex3{
+	width: 250px;
+	margin: 1%;
+}
+
+.imginicio3{
+	width: 250px;
+	height: 200px;
+}
+
+/*-------------------------listarecetas---------------------------*/
+
+.recetas figure:target{
+	position: fixed;
+	top: 10%;
+	width: 75%; 
+	height: 55%;
+	padding: 5%;
+	padding-bottom: 10%;
+	background-color: white;
+	z-index: 10;
+}
+
+.recetas figure:target .cerrar{
+    display: initial;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  	cursor: pointer;
+}
+
+/*---------------------------------tomates-------------------------------*/
+
+.gridreceta1{
+	padding: 1%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas: 
+		'tituloing'
+		'ingtomates'
+		'tituloprep'
+		'prep'
+		'imgtomate'
+		'videoa';
+		grid-gap: 5px;
+}
+
+.tomate1{
+	grid-area: imgtomate;
+	height: 250px;
+}
+
+.tomate1 img{
+	height: 250px;
+	width: 300px;
+}
+
+.tomate2{
+	grid-area: cuatrotomates;
+	height: 350px;
+	width: 250px;
+	display: none;
+}
+
+.tomate2 img{
+	height: 350px;
+	width: 250px;
+}
+
+.inglisttomates{
+	text-align: left;
+}
+
+.ingtitulo{
+	grid-area: tituloing;
+	text-align: left;
+}
+
+.preptitulo{
+	grid-area: tituloprep;
+}
+
+.preptomates{
+	grid-area: prep;
+}
+
+.videot1{
+	grid-area: videoa;
+	height: 150px;
+	width: 300px;
+}
+
+.videot2{
+	grid-area: videob;
+	display: none;
+	height: 150px;
+	width: 300px;
+}
+
+/*-----------------------------------registro------------------------------*/
+
+span{
+	display: none;
+}

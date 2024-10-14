@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Tomates horneados con queso panela</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina inicio de este videoclub">
+		<meta name="keywords" content="index, contacto, , , , ">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="../css/estilomovil.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/ico.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/ico.png">
+	</head>
+	<body>
+		<header>
+			<form method="POST" autocomplete="off" class="formlogin">
+				<div>
+					<label class="labellogin" for="lulogin">Usuario:</label>
+					<input type="text" class="inputlogin" id="lulogin" required="required" pattern="[a-zA-Z0-9]{4,12}" name="user" maxlength="12">
+				</div>
+				<div>
+					<label class="labellogin" for="iclogin">Contraseña:</label>
+					<input type="password" required="required" pattern="[a-zA-Z]{4,12}" class="inputlogin" id="iclogin" name="pwd" maxlength="12">
+				</div>
+				<input class="submitlogin" type="submit" name="Enviar" value="Iniciar Sesión">
+			</form>
+			<h1><a href="../index.html">Recetas de cocina</a></h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<datalist id="buscador">
+					<option value="Tomates horneados con queso panela"></option>
+					<option value="Risotto de champiñones"></option>
+					<option value="Espaguetis de calabacín sin pasta"></option>
+					<option value="Sándwich de manzana con queso"></option>
+					<option value="Pan pizza con pollo"></option>
+					<option value="Ensalada de ejotes y arándanos"></option>
+					<option value="Avena con yogurt y leche"></option>
+					<option value="Sopa de pollo"></option>
+					<option value="Pasta estilo Caprese"></option>
+					<option value="Sopa fría de calabaza y curry"></option>
+					<option value="Mini hamburguesas gourmet"></option>
+					<option value="Pasta de champiñones y espinaca"></option>
+				</datalist>
+				<input class="inputinicio" placeholder="Buscar aquí..." type="search" list="buscador" name="recetas">
+				<input type="image" src="../img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="listarecetas.html">Recetas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="subir.html">Receta a subir</a></li>
+			</ul>
+		</nav>
+		<h2>Tomates horneados con queso panela</h2>
+		<div class="gridreceta1">
+			<figure class="tomate1">
+				<img src="../img/receta1.jpg" alt="tomates">
+			</figure>
+			<div class="ingtitulo"><h3>Ingredientes:</h3></div>
+			<aside class="ingtomates">
+				<ul class="inglisttomates">
+					<li>- 2 tomates de tamaño mediano</li>
+					<li>- 1/3 taza de queso parmesano rallado</li>
+					<li>- Orégano fresco</li>
+					<li>- Pimienta molida</li>
+					<li>- Aceite de oliva</li>
+					<li>- Sal</li>
+				</ul>
+			</aside>
+			<div class="preptitulo"><h4>Preparación:</h4></div>
+			<aside class="preptomates">
+				Antes de comenzar estos deliciosos tomates asados, procura precalentar el horno a unos 230°C.
+				Empieza por lavar los tomates y cortarlos en rodajas pequeñas. Es recomendable que las rodajas no sean demasiado gruesas, pero tampoco demasiado finas; lo mejor son cortes de aproximadamente un centímetro de grosor parta lograr la textura buscada.
+				
+				Luego de que hayas terminado los cortes, coloca las rodajas sobre una bandeja para hornear con un poco de aceite.
+				Espolvorea queso parmesano sobre cada rebanada, tratando de cubrir muy bien toda su superficie.
+
+				Agrega, además, una buena cantidad de orégano fresco, un poco de sal y también pimienta. ¡Ah! Y como detalle final, antes de comenzar con el horneado, no olvides colocar algo de aceite de oliva sobre las rodajas.
+				Cocina los tomates durante aproximadamente unos 10 o 15 minutos y ¡listo! Tendrás unos sabrosos tomates asados con queso parmesano.
+				¿No parecen una delicia? ¡Pues lo son! Intenta esta receta. Créeme; no te arrepentirás.
+			</aside>
+			<figure class="tomate2">
+				<img src="../img/tomates.jpg" alt="4tomates">
+			</figure>
+			<iframe class="videot1" src="https://www.youtube.com/embed/tVqwn0FfJQU" allowfullscreen></iframe>
+			<video controls="controls" class="videot2">
+				<source src="../video/tomates.mp4">
+			</video>
+		</div>
+		<footer class="footers">
+			<div class="textfooters">
+				<p class="textfooterb">Web creada por Cristian Lozano</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Risotto de champiñones</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina inicio de este videoclub">
+		<meta name="keywords" content="index, contacto, , , , ">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="../css/estilomovil.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/ico.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/ico.png">
+		<script>
+			var dificultad=['Fácil','Media','Difícil'];
+		</script>
+	</head>
+	<body>
+		<header>
+			<form method="POST" autocomplete="off" class="formlogin">
+				<div>
+					<label class="labellogin" for="lulogin">Usuario:</label>
+					<input type="text" class="inputlogin" id="lulogin" required="required" pattern="[a-zA-Z0-9]{4,12}" name="user" maxlength="12">
+				</div>
+				<div>
+					<label class="labellogin" for="iclogin">Contraseña:</label>
+					<input type="password" required="required" pattern="[a-zA-Z]{4,12}" class="inputlogin" id="iclogin" name="pwd" maxlength="12">
+				</div>
+				<input class="submitlogin" type="submit" name="Enviar" value="Iniciar Sesión">
+			</form>
+			<h1><a href="../index.html">Recetas de cocina</a></h1>
+			<form class="buscador" method="POST" autocomplete="off">
+				<datalist id="buscador">
+					<option value="Tomates horneados con queso panela"></option>
+					<option value="Risotto de champiñones"></option>
+					<option value="Espaguetis de calabacín sin pasta"></option>
+					<option value="Sándwich de manzana con queso"></option>
+					<option value="Pan pizza con pollo"></option>
+					<option value="Ensalada de ejotes y arándanos"></option>
+					<option value="Avena con yogurt y leche"></option>
+					<option value="Sopa de pollo"></option>
+					<option value="Pasta estilo Caprese"></option>
+					<option value="Sopa fría de calabaza y curry"></option>
+					<option value="Mini hamburguesas gourmet"></option>
+					<option value="Pasta de champiñones y espinaca"></option>
+				</datalist>
+				<input class="inputinicio" placeholder="Buscar aquí..." type="search" list="buscador" name="recetas">
+				<input type="image" src="../img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="listarecetas.html">Recetas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="subir.html">Receta a subir</a></li>
+			</ul>
+		</nav>
+		<h2>Receta a subir</h2>
+		<form class="upreceta" method="POST" autocomplete="off">
+			<label class="lsubir">Nombre de la receta:</label>
+			<input type="text" name="nr" required="required" class="isubir"><br>
+			<textarea class="textsubir">Ingredientes....</textarea><br>
+			<label class="lsubir">Tiempo de preparación:</label><br>
+			<input class="isubir" type="text" name="tiempo" required="required" pattern="[0-9]">
+			<select>
+				<option>segundos</option>
+				<option>minutos</option>
+				<option>hores</option>
+				<option>días</option>
+			</select><br>
+			<label class="lsubir">Dificutad:</label>
+			<input type="range" name="Rango" min="0" max="2" value="0" step="1"
+			onchange="this.nextElementSibling.innerHTML=dificultad[this.value];"/>
+			<output>Fácil</output><br>
+			<label class="lsubir">Preparación:</label><br>
+			<textarea class="textsubir">1r Método:...
+			</textarea><br>
+			<input class="rsubir" type="reset" name="Reset" value="Borrar">
+			<input class="ssubir" type="submit" name="Enviar" value="Subir">
+		</form>
+		<footer class="footers">
+			<div class="textfooters">
+				<p class="textfooterb">Web creada por Cristian Lozano</p>
+			</div>
+		</footer>
+	</body>
+</html>

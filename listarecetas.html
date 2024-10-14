@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Recetas</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina inicio de este videoclub">
+		<meta name="keywords" content="index, contacto, , , , ">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="../css/estilomovil.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/ico.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/ico.png">
+	</head>
+	<body>
+		<header>
+			<form method="POST" autocomplete="off" class="formlogin">
+				<div>
+					<label class="labellogin" for="lulogin">Usuario:</label>
+					<input type="text" class="inputlogin" id="lulogin" required="required" pattern="[a-zA-Z0-9]{4,12}" name="user" maxlength="12">
+				</div>
+				<div>
+					<label class="labellogin" for="iclogin">Contraseña:</label>
+					<input type="password" required="required" pattern="[a-zA-Z]{4,12}" class="inputlogin" id="iclogin" name="pwd" maxlength="12">
+				</div>
+				<input class="submitlogin" type="submit" name="Enviar" value="Iniciar Sesión">
+			</form>
+			<h1><a href="../index.html">Recetas de cocina</a></h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<datalist id="buscador">
+					<option value="Tomates horneados con queso panela"></option>
+					<option value="Risotto de champiñones"></option>
+					<option value="Espaguetis de calabacín sin pasta"></option>
+					<option value="Sándwich de manzana con queso"></option>
+					<option value="Pan pizza con pollo"></option>
+					<option value="Ensalada de ejotes y arándanos"></option>
+					<option value="Avena con yogurt y leche"></option>
+					<option value="Sopa de pollo"></option>
+					<option value="Pasta estilo Caprese"></option>
+					<option value="Sopa fría de calabaza y curry"></option>
+					<option value="Mini hamburguesas gourmet"></option>
+					<option value="Pasta de champiñones y espinaca"></option>
+				</datalist>
+				<input class="inputinicio" placeholder="Buscar aquí..." type="search" list="buscador" name="recetas">
+				<input type="image" src="../img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="listarecetas.html">Recetas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="subir.html">Receta a subir</a></li>
+			</ul>
+		</nav>
+		<h2>Recetas sencillas</h2>
+		<div class="recetas">
+			<figure id="receta1">
+				<a href="#receta1">
+					<img src="../img/receta1.jpg" alt="tomates">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<a href="tomateshorneadosconquesopanela.html"><figcaption>1. Tomates horneados con queso panela</figcaption></a>
+			</figure>
+			<figure id="receta2">
+				<a href="#receta2">
+					<img src="../img/receta2.jpg" alt="risotto">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<a href="risotto.html"><figcaption>2. Risotto de champiñones</figcaption></a>
+			</figure>
+			<figure id="receta3">
+				<a href="#receta3">
+					<img src="../img/receta3.jpg" alt="calabacin">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<a href="espaguetisdecalabacinsinpasta.html"><figcaption>3. Espaguetis de calabacín sin pasta</figcaption></a>
+			</figure>
+			<figure id="receta4">
+				<a href="#receta4">
+					<img src="../img/receta4.jpg" alt="sandwich">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<figcaption>4. Sándwich de manzana con queso</figcaption>
+			</figure>
+			<figure id="receta5">
+				<a href="#receta5">
+					<img src="../img/receta5.jpg" alt="pizza">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<figcaption>5. Pan pizza con pollo</figcaption>
+			</figure>
+			<figure id="receta6">
+				<a href="#receta6">
+					<img src="../img/receta6.jpg" alt="ensalada">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<figcaption>6. Ensalada de ejotes y arándanos</figcaption>
+			</figure>
+			<figure id="receta7">
+				<a href="#receta7">
+					<img src="../img/receta7.jpg" alt="tazón">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<figcaption>7. Avena con yogurt y leche</figcaption>
+			</figure>
+			<figure id="receta8">
+				<a href="#receta8">
+					<img src="../img/receta8.jpg" alt="sopa">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<figcaption>8. Sopa de pollo</figcaption>
+			</figure>
+			<figure id="receta9">
+				<a href="#receta9">
+					<img src="../img/receta9.jpg" alt="pasta">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<figcaption>9. Pasta estilo Caprese</figcaption>
+			</figure>
+			<figure id="receta10">
+				<a href="#receta10">	
+					<img src="../img/receta10.jpg" alt="sopafria">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<figcaption>10. Sopa fría de calabaza y curry</figcaption>
+			</figure>
+			<figure id="receta11">
+				<a href="#receta11">
+					<img src="../img/receta11.jpg" alt="minihamburguesa">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<figcaption>11. Mini hamburguesas gourmet</figcaption>
+			</figure>
+			<figure id="receta12">
+				<a href="#receta12">	
+					<img src="../img/receta12.jpg" alt="pastachampiñones">
+				</a>
+				<a href="#">
+					<img src="../img/cerrar.png" alt="cerrar" class="cerrar">
+				</a>
+				<figcaption>12. Pasta de champiñones y espinaca</figcaption>
+			</figure>
+		</div>
+		<footer class="footers">
+			<div class="textfooters">
+				<p class="textfooterb">Web creada por Cristian Lozano</p>
+			</div>
+		</footer>
+	</body>

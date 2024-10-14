@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Registro</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina inicio de este videoclub">
+		<meta name="keywords" content="index, contacto, , , , ">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="../css/estilomovil.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/ico.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/ico.png">
+	</head>
+	<body>
+		<header>
+			<form method="POST" autocomplete="off" class="formlogin">
+				<div>
+					<label class="labellogin" for="lulogin">Usuario:</label>
+					<input type="text" class="inputlogin" id="lulogin" required="required" pattern="[a-zA-Z0-9]{4,12}" name="user" maxlength="12">
+				</div>
+				<div>
+					<label class="labellogin" for="iclogin">Contraseña:</label>
+					<input type="password" required="required" pattern="[a-zA-Z]{4,12}" class="inputlogin" id="iclogin" name="pwd" maxlength="12">
+				</div>
+				<input class="submitlogin" type="submit" name="Enviar" value="Iniciar Sesión">
+			</form>
+			<h1><a href="../index.html">Recetas de cocina</a></h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<datalist id="buscador">
+					<option value="Tomates horneados con queso panela"></option>
+					<option value="Risotto de champiñones"></option>
+					<option value="Espaguetis de calabacín sin pasta"></option>
+					<option value="Sándwich de manzana con queso"></option>
+					<option value="Pan pizza con pollo"></option>
+					<option value="Ensalada de ejotes y arándanos"></option>
+					<option value="Avena con yogurt y leche"></option>
+					<option value="Sopa de pollo"></option>
+					<option value="Pasta estilo Caprese"></option>
+					<option value="Sopa fría de calabaza y curry"></option>
+					<option value="Mini hamburguesas gourmet"></option>
+					<option value="Pasta de champiñones y espinaca"></option>
+				</datalist>
+				<input class="inputinicio" type="search" placeholder="Buscar aquí..." list="buscador" name="recetas">
+				<input type="image" src="../img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="listarecetas.html">Recetas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="subir.html">Receta a subir</a></li>
+			</ul>
+		</nav>
+		<h2>Registro</h2>
+		<form method="POST" autocomplete="off" class="formregistro">
+			<label class="eregistro" for="NyA">Nombre y Apellidos:</label>
+			<input class="iregistro" type="text" name="NombreyApellidos" id="NyA" pattern="[a-zA-ZñÑçÇáéíóúàèìòùÁÉÍÓÚÀÈÌÒÙ]{3,16}" minlength="3" maxlength="16" placeholder="Ej: Pepito Palotes" required="required"><span>(Obligatorio)</span><br>
+			<label class="eregistro" for="DNI">DNI:</label>
+			<input type="text" class="iregistro" name="dni" id="DNI" pattern="[0-9]{8}[a-zA-z]" maxlength="9" placeholder="Ej: 12345678A" required="required"><span>(Obligatorio)</span><br>
+			<label class="eregistro" for="NU">Nombre de Usuario:</label>
+			<input class="iregistro" type="text" name="NombreUsuario" id="NU" required="required" maxlength="12" pattern="[a-zA-Z]{4,12}" minlength="4" placeholder="Ej: Subze"><span>(Obligatorio)</span><br>
+			<label class="eregistro" for="PWD">Contraseña:</label>
+			<input class="iregistro" type="password" id="PWD" name="pwd" pattern="[a-zA-Z]{4,12}" minlength="4" maxlength="12" required="required"><span>(Obligatorio)</span><br>
+			<label class="eregistro" for="rPWD">Repetir Contraseña:</label>
+			<input class="iregistro" type="password" id="rPWD" name="pwd" pattern="[a-zA-Z]{4,12}" minlength="4" maxlength="12" required="required"><span>(Obligatorio)</span><br>
+			<label class="eregistro" for="mail">Correo:</label>
+			<input type="email" name="email" class="iregistro" placeholder="ejemplo@correo.com" id="mail" required="required"><span>(Obligatorio)</span><br>
+			<label class="eregistro">Sexo:</label>
+			<input type="radio" name="Sexos" value="Famele" checked="checked">Famele
+			<input type="radio" name="Sexo" value="Male">Male<br>
+			<label class="eregistro">Gustos:</label><br>
+				<input class="check" type="checkbox" value="postres">Postres<br>
+				<input class="check" type="checkbox" value="cenas">Cenas<br>
+				<input class="check" type="checkbox" value="pasteleria">Pasteleria<br>
+				<input class="check" type="checkbox" value="desayunos">Desayunos<br>
+				<input class="check" type="checkbox" value="comidas">Comidas<br>
+			<label class="eregistro">Fecha de Nacimiento:</label>
+			<select name="dis">
+				<script>
+					for (let i=1;i<=31;i++)
+					document.write('<option value='+i+'>'+i+'</option>');
+				</script>
+			</select>
+			<select>
+				<option>Enero</option>
+				<option>Febrero</option>
+				<option>Marzo</option>
+				<option>Abril</option>
+				<option>Mayo</option>
+				<option>Junio</option>
+				<option>Julio</option>
+				<option>Agosto</option>
+				<option>Septiembre</option>
+				<option>Octubre</option>
+				<option>Noviembre</option>
+				<option>Diciembre</option>
+			</select>
+			<select>
+				<script>
+					for (let i=1900;i<=2018;i++)
+					document.write('<option value='+i+'>'+i+'</option>');
+				</script>
+			</select><br>
+			<label class="eregistro" for="licencia">Acepto los términos de licéncia</label>
+			<input type="checkbox" name="acepto" id="licencia" required="required"><span>(Obligatorio)</span><br>
+			<input class="sregistro" type="reset" value="Reset" name="Borrar">
+			<input class="sregistro" type="submit" value="Enviar" name="Iniciar">
+		</form>
+		<footer class="footers">
+			<div class="textfooters">
+				<p class="textfooterb">Web creada por Cristian Lozano</p>
+			</div>
+		</footer>
+	</body>
+</html>

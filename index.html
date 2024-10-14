@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Recetas de cocina</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina inicio de este videoclub">
+		<meta name="keywords" content="index, contacto, , , , ">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="css/estilomovil.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/ico.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/ico.png">
+	</head>
+	<body>
+		<header>
+			<form method="POST" autocomplete="off" class="formlogin">
+				<div>
+					<label class="labellogin" for="lulogin">Usuario:</label>
+					<input type="text" class="inputlogin" id="lulogin" required="required" pattern="[a-zA-Z0-9]{4,12}" name="user" maxlength="12">
+				</div>
+				<div>
+					<label class="labellogin" for="iclogin">Contraseña:</label>
+					<input type="password" required="required" pattern="[a-zA-Z]{4,12}" class="inputlogin" id="iclogin" name="pwd" maxlength="12">
+				</div>
+				<input class="submitlogin" type="submit" name="Enviar" value="Iniciar Sesión">
+			</form>
+			<h1><a href="index.html">Recetas de cocina</a></h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<datalist id="buscador">
+					<option value="Tomates horneados con queso panela"></option>
+					<option value="Risotto de champiñones"></option>
+					<option value="Espaguetis de calabacín sin pasta"></option>
+					<option value="Sándwich de manzana con queso"></option>
+					<option value="Pan pizza con pollo"></option>
+					<option value="Ensalada de ejotes y arándanos"></option>
+					<option value="Avena con yogurt y leche"></option>
+					<option value="Sopa de pollo"></option>
+					<option value="Pasta estilo Caprese"></option>
+					<option value="Sopa fría de calabaza y curry"></option>
+					<option value="Mini hamburguesas gourmet"></option>
+					<option value="Pasta de champiñones y espinaca"></option>
+				</datalist>
+				<input class="inputinicio" placeholder="Buscar aquí..." type="search" list="buscador" name="recetas">
+				<input type="image" src="img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="subwebs/listarecetas.html">Recetas</a></li>
+				<li><a href="subwebs/contacto.html">Contacto</a></li>
+				<li><a href="subwebs/registro.html">Registro</a></li>
+				<li><a href="subwebs/subir.html">Receta a subir</a></li>
+			</ul>
+		</nav>
+		<h2>Recetas para cualquier situación</h2>
+		<div class="grid-container">
+			<aside class="textinicio">
+				<p>
+					Una receta de cocina (o simplemente receta), en gastronomía, es una descripción ordenada de un procedimiento culinario. Suele consistir primero en una lista de ingredientes necesarios, seguido de una serie de instrucciones con la cual se elabora un plato o una bebida específicos. Suele incluir en algunos casos una lista de los utensilios de cocina adecuados para su realización. Ocasionalmente incluye una descripción social, histórica que motiva la receta.
+
+					Las recetas pueden transmitirse a lo largo de la historia de los pueblos, de generación en generación, mediante tradición oral, o escritas mediante su recopilación en libros de cocina o recetarios culinarios. Este conocimiento compilado forma parte importante de la cultura de un grupo humano, su evolución permite conocer los cambios a los que se ve sometida una cultura. Su empleo en estudios sociológicos y antropológicos, o en historia permite conocer las condiciones culinarias, los gustos, e influencias de un periodo. En el siglo XXI las recetas culinarias aparecen frecuentemente en medios de comunicación como programas de televisión, revistas, periódicos y blogs.
+
+					Una de las primeras evidencias documentales de recetas conocidas procede de 1600 a. C. en forma de tablilla de barro procedente del sur de Babilonia con escritura cuneiforme y expresada en idioma acadio. Los griegos tuvieron escritores culinarios dedicados como el poeta Arquestrato, el prolífico escritor culinario Timáquides de Rodas. Ninguno de sus recetarios ha llegado a nuestros días. Uno de los primeros libros de recetas conocidos en la cocina occidental fue de De re coquinaria escrito por el cocinero romano Marco Gavio Apicio.
+
+					El nombre «receta» proviene del latín recipere que indica por igual 'dar'/'recibir'. Inicialmente en los textos de recetas, los procesos culinarios se describían como una secuencia de instrucciones. El primer recetario medieval fue un manuscrito alemán del siglo XIII.5​ La cocina española tiene en el Libre del Sent Soví, 1324 uno de sus recetarios más antiguos.
+
+					En Europa los cocineros franceses Antonin Carême y Georges Auguste Escoffier comienzan a definir las técnicas de la cocina, y entre su tarea la de recopilar y sistematizar los procesos de cocina. En América del Norte Isabella Beeton escribe a finales del siglo XIX su Book of Household Management como uno de los primeros recetarios modernos. El fenómeno antropológico de las recetas culinarias, como transmisión de cultura fue estudiado por Claude Lévi-Strauss en su obra Les mythologiques 3: L'origine des manières de table (El origen de las maneras en la mesa). En los años sesenta aparecen los programas de televisión mostrando formas de cocinar.
+
+					Las recetas culinarias anteriores al siglo XX poseían más una estructura narrativa que permitía cierta creación literaria paralela. Es precisamente en las primeras décadas del siglo XX cuando aparece una estructura separada de ingredientes/procesos en la descripción de las recetas culinarias. Si la tradición oral se cristalizó en una literatura culinaria en forma de libros de cocina escritos desde el siglo XVIII, en el siglo XX las recetas se describen en programas de televisión, en revistas (especializadas o no), siendo además muy populares en diversos blogs especializados.
+				</p>
+			</aside>
+			<figure class="figureinicio">
+				<img class="imginicio" src="img/imginicio.jpg" alt="plato">
+			</figure>
+			<div class="flex-container">
+				<figure class="flex1">
+					<img class="imginicio1" src="img/recetainicio1.jpg" alt="recetainicioa"
+					>
+				</figure>
+				<figure class="flex2">
+					<img class="imginicio2" src="img/recetainicio2.jpg" alt="recetainiciob">
+				</figure>
+				<figure class="flex3">
+					<img class="imginicio3" src="img/recetainicio3.jpg" alt="recetainicioc">
+				</figure>
+			</div>
+		</div>
+		<footer class="mapalist">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="subwebs/listarecetas.html">Recetas</a></li>
+				<li><a href="subwebs/contacto.html">Contacto</a></li>
+				<li><a href="subwebs/registro.html">Registro</a></li>
+				<li><a href="subwebs/subir.html">Receta a subir</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

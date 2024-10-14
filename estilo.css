@@ -1,0 +1,493 @@
+/*----------------------------formatting---------------------------*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+li{
+	list-style-type: none;
+}
+
+.flex1{flex:1;}
+.flex2{flex:2;}
+.flex3{flex:3;}
+.flex4{flex:4;}
+.flex5{flex:5;}
+.flex6{flex:6;}
+
+/*---------------------------family text-----------------------------*/
+
+h1{
+	font-size: 3em;
+	font-family: JMH SALOON;
+	margin-left: 2%;
+	text-shadow: 4px 8px #888888;
+}
+
+h2{
+	font-size: 2.5em;
+	font-family: Courier New;
+	text-shadow: 2px 4px #888888;
+	text-align: center;
+	grid-area: titulo;
+}
+
+h3{
+	font-size: 2em;
+	font-family: Eras ITC;
+}
+
+h4{
+	font-size: 2em;
+	font-family: Eras ITC;
+}
+
+/*-------------------------html, body, header y footer---------------*/
+
+html{
+	background-image: url(../img/html.png);
+	background-attachment: fixed;
+}
+
+body{
+	background-color: white;
+	width: 90%;
+	margin: 30px auto;
+	border-radius: 10px;
+}
+
+header{
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-repeat: no-repeat;
+}
+
+.formlogin{
+	display: block;
+    text-align: right;
+    margin: 1%;
+}
+
+.inputlogin{
+	margin-top: 1%;
+	background-color: #eee;
+}
+
+.submitlogin{
+	margin-top: 0.5%;
+}
+
+.footers{
+	background-image: url(../img/footerb.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.textfooters{
+	padding-top: 125px;
+}
+
+.textfooterb{
+	text-align: right;
+	color: white;
+	background-color: #539ca9;
+}
+
+.mapalist{
+	background-image: url(../img/footer.png);
+	background-color: grey;
+}
+
+.mapalist>ul li{
+	color: white;
+	font-size: 1.1em;
+	font-family: Arial;
+	padding: 0.3%;
+}
+
+.databuscador{
+	left: 30px;
+}
+
+.buscador{
+	text-align: right;
+	padding-top: 50px;
+}
+
+.inputinicio{
+	border-radius: 5px;
+	background-color: #eee;
+}
+
+.imgbuscador{
+	height: 25px;
+	width: 25px;
+}
+
+.submitlogin{
+	background-color: #386a9d;
+	border-radius: 3px;
+	border-color: #386a9d;
+	color: white;
+	width: 105px;
+}
+
+/*------------------------------barra navegación---------------------*/
+
+nav{
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	background-color: white;
+	font-size: 1.1em;
+	font-family: Comic Sans MS;
+	color: black;
+	height: 40px;
+}
+
+nav>ul li{
+	transition: 0.5s;
+	display: inline-block;
+	margin: 0.5%;
+}
+
+nav>ul li:hover{
+	transform: rotate(-8deg) scale(1.15);
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+
+/*--------------------------------index------------------------------*/
+
+.grid-container{
+	padding: 1%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas: 
+		'titulo titulo'
+		'img text'
+		'flex flex';
+		grid-gap: 5px;
+}
+
+.textinicio{
+	grid-area: text;
+	text-align: justify;
+	font-size: 1.2em;
+
+}
+
+.figureinicio{
+	grid-area: img;
+}
+
+.imginicio{
+	height: 600px;
+	width: 400px;
+}
+
+.flex-container{
+	grid-area: flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex1{
+	width: 350px;
+	margin: 1%;
+}
+
+.imginicio1{
+	height: 300px; 
+	width: 350px;
+}
+
+.flex2{
+	width: 350px;
+	margin: 1%;
+}
+
+.imginicio2{
+	width: 350px;
+	height: 300px;
+}
+
+.flex3{
+	width: 350px;
+	margin: 1%;
+}
+
+.imginicio3{
+	width: 350px;
+	height: 300px;
+}
+
+/*-------------------------listarecetas------------------------*/
+
+.recetas{
+	display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.recetas>figure img{
+	height: 300px;
+	width: 300px;
+	border-radius: 5px;
+	width: 100%;
+  	height: 100%;
+  	transition: filter 0.4s;
+  	cursor: zoom-in;
+}
+
+.recetas figure{
+	height: 300px;
+	width: 300px;
+	margin: 2%;
+	box-shadow: 4px 8px 16px rgba(60,60,60, 0.6); 
+	margin-top: 6%;
+}
+
+.recetas figure{
+	flex: 1;
+	min-width: 220px;
+	border:  solid 2px grey;
+  	border-radius: 10px;
+  	box-shadow:  5px 5px 5px rgba(60,60,60,0.5);
+  	padding:  20px 20px 50px 20px;
+ 	margin: 10px;
+ 	width:  200px;
+ 	height:  200px;
+ 	background-color: white;
+}
+
+.recetas figure:target{
+	position: fixed;
+	top: 0%;
+	left: 5%;
+	width: 65%; 
+	height: 75%;
+	padding: 5%;
+	padding-bottom: 5%;
+	background-color: white;
+	z-index: 10;
+}
+
+.recetas figure img:target{
+  	cursor: initial;
+}
+.recetasrecetas figure figcaption:target{
+   	font-size: 1.5em;
+}
+
+.recetas figure:target .cerrar{
+    display: initial;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+  	cursor: pointer;
+}
+
+.recetas figure figcaption{
+  	color: grey;
+  	text-align: center;
+  	margin-top: 1%;
+}
+
+.cerrar{
+  	display: none;
+	height: 10px;
+	width: 10px;
+}
+
+figcaption{
+	text-align: center;
+	margin-top: 2%;
+}
+
+/*---------------------------------tomates-------------------------------*/
+
+.gridreceta1{
+	padding: 1%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas: 
+		'tituloing tituloing tituloprep tituloprep'
+		'imgtomate ingtomates cuatrotomates prep'
+		'videoa videoa videoa videoa'
+		'videob videob videob videob';
+		grid-gap: 5px;
+}
+
+.tomate1{
+	grid-area: imgtomate;
+	height: 250px;
+}
+
+.tomate1 img{
+	height: 250px;
+	width: 250px;
+}
+
+.tomate2{
+	grid-area: cuatrotomates;
+	height: 300px;
+	width: 250px;
+}
+
+.tomate2 img{
+	height: 300px;
+	width: 250px;
+}
+
+.ingtomates{
+	grid-area: ingtomates;
+}
+
+.inglisttomates{
+	text-align: left;
+}
+
+.ingtitulo{
+	grid-area: tituloing;
+	text-align: center;
+}
+
+.preptitulo{
+	grid-area: tituloprep;
+	text-align: center;
+}
+
+.preptomates{
+	grid-area: prep;
+}
+
+.videot1{
+	grid-area: videoa;
+	height: 340px;
+	width: 500px;
+}
+
+.videot2{
+	grid-area: videob;
+	height: 340px;
+	width: 500px;
+}
+
+/*------------------------------------contacto--------------------------*/
+
+.divcontact{
+	background-color: #93a69e;
+	border-radius: 5px;
+	margin: 1%;
+}
+
+.contacto{
+	background-color: #93a69e;
+	border-radius: 5px;
+	margin: 1%;
+}
+
+.inputcontact{
+	display: block;
+	background-color: #eee;
+}
+
+.textareacontacto{
+	resize: none;
+	height: 50px;
+	width: 290px;
+	background-color: #eee;
+}
+
+/*-------------------------------------registro---------------------------------*/
+
+.formregistro{
+	background-color: #93a69e;
+	border-radius: 5px;
+	margin: 1%;
+}
+
+.eregistro{
+	display: inline-block;
+	min-width: 160px;
+	margin: 1%;
+}
+
+.iregistro{
+	background-color: #eee;
+}
+
+.check{
+	margin: 1%;
+}
+
+.sregistro{
+	background-color: #386a9d;
+	border-radius: 3px;
+	border-color: #386a9d;
+	color: white;
+	width: 105px;
+}
+
+/*-----------------------------------Subir receta---------------------------*/
+
+.upreceta{
+	background-color: #93a69e; 
+	margin: 1%;
+	border-radius: 5px;
+}
+
+.isubir{
+	border-radius: 5px;
+	background-color: #eee;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
+.lsubir{
+	margin-top: 1%;
+	margin-left: 1%;
+	display: inline-block;
+}
+
+.textsubir{
+	background-color: #eee;
+	border-radius: 5px;
+	resize: none;
+	margin: 1%;
+	width: 300px;
+	height: 500px;
+}
+
+.rsubir{
+	background-color: #386a9d;
+	color: white;
+	border-radius: 5px;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	width: 80px;
+	border-color: #386a9d;
+}
+
+.ssubir{
+	background-color: #386a9d;
+	color: white;
+	border-radius: 5px;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	width: 80px;
+	border-color: #386a9d;
+	margin-left: 138px;
+}

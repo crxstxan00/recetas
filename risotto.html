@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Risotto de champiñones</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina inicio de este videoclub">
+		<meta name="keywords" content="index, contacto, , , , ">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="../css/estilomovil.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/ico.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/ico.png">
+	</head>
+	<body>
+		<header>
+			<form method="POST" autocomplete="off" class="formlogin">
+				<div>
+					<label class="labellogin" for="lulogin">Usuario:</label>
+					<input type="text" class="inputlogin" id="lulogin" required="required" pattern="[a-zA-Z0-9]{4,12}" name="user" maxlength="12">
+				</div>
+				<div>
+					<label class="labellogin" for="iclogin">Contraseña:</label>
+					<input type="password" required="required" pattern="[a-zA-Z]{4,12}" class="inputlogin" id="iclogin" name="pwd" maxlength="12">
+				</div>
+				<input class="submitlogin" type="submit" name="Enviar" value="Iniciar Sesión">
+			</form>
+			<h1><a href="../index.html">Recetas de cocina</a></h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<datalist id="buscador">
+					<option value="Tomates horneados con queso panela"></option>
+					<option value="Risotto de champiñones"></option>
+					<option value="Espaguetis de calabacín sin pasta"></option>
+					<option value="Sándwich de manzana con queso"></option>
+					<option value="Pan pizza con pollo"></option>
+					<option value="Ensalada de ejotes y arándanos"></option>
+					<option value="Avena con yogurt y leche"></option>
+					<option value="Sopa de pollo"></option>
+					<option value="Pasta estilo Caprese"></option>
+					<option value="Sopa fría de calabaza y curry"></option>
+					<option value="Mini hamburguesas gourmet"></option>
+					<option value="Pasta de champiñones y espinaca"></option>
+				</datalist>
+				<input class="inputinicio" placeholder="Buscar aquí..." type="search" list="buscador" name="recetas">
+				<input type="image" src="../img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="listarecetas.html">Recetas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="subir.html">Receta a subir</a></li>
+			</ul>
+		</nav>
+		<h2>Risotto de champiñones</h2>
+		<div class="gridreceta1">
+			<figure class="tomate1">
+				<img src="../img/risotto.jpg" alt="risotto">
+			</figure>
+			<div class="ingtitulo"><h3>Ingredientes:</h3></div>
+			<aside class="ingtomates">
+				<ul class="inglisttomates">
+					<li>1 litro de caldo</li>
+					<li>350 gr. de champiñones (u hongos deshidratados)</li>
+					<li>300 gr. de arroz</li>
+					<li>1 cebolla</li>
+					<li>2 dientes de ajo</li>
+					<li>75 gr. de mantequilla</li>
+					<li>Aceite de oliva</li>
+					<li>75 gr. de parmesano rallado</li>
+					<li>1 vaso de vino blanco</li>
+					<li>Sal</li>
+					<li>Perejil o albahaca</li>
+				</ul>
+			</aside>
+			<div class="preptitulo"><h4>Preparación:</h4></div>
+			<aside class="preptomates">
+				Ralla o corta en trozos menuditos la cebolla y los ajos, y deja que se rehoguen a fuego medio con mantequilla o aceite de oliva sin que se doren. Añade los champiñones bien lavados y cortados en dados o láminas, y cocina hasta que hayan soltado todo el agua. Sala ligeramente el conjunto. Si quieres, guárdate unas láminas de champiñón para adornar luego cada plato con un par y un poco de perejil o albahaca.
+
+				Suma el arroz mezclándolo bien con el resto de ingredientes sin que se tueste. Añade el vino caliente (para que el grano no se rompa por fuera y quede duro por dentro con la diferencia de temperatura), que se evaporará rápidamente.
+
+				Con el caldo preparado y bien caliente (ojo que no esté salado porque la evaporación aumenta la concentración de sal y el plato podría quedar incomestible), baja el fuego y, con un cazo, echa la cantidad justa para que cubra al ras el arroz. Remueve suavemente con regularidad (no hace falta que sea constantemente) con una cuchara de madera mientras el caldo se consume.
+				Una vez evaporada la primera tanda, añade para la siguiente la proporción de caldo necesaria para que lo cubra y sigue removiendo regularmente. Repite el proceso durante los 25-30 minutos que suele durar la cocción, aunque el tiempo dependerá del arroz usado. Cuando comience a tener un aspecto aterciopelado y cremoso, prueba los granos y apaga el fuego cuando consideres que están al dente (blandos por fuera y con la dureza justa por dentro).
+
+				Incorpora el resto de la mantequilla y espolvorea el parmesano rallado, y remuévelo bien para que se mezcle. Rectifica de sal si es necesario. Tapa la cazuela y deja reposar unos minutos. Hay quien para dotarle de más de cremosidad echa al final un chorrito de nata, pero los italianos lo consideran un pecado: la cremosidad la otorga el almidón del arroz.
+			</aside>
+			<iframe class="videot1" src="https://www.youtube.com/embed/AQ2Q_zu1m6M" allowfullscreen></iframe>
+			<video controls="controls" class="videot2">
+				<source src="../video/risotto.mp4">
+			</video>
+		</div>
+		<footer class="footers">
+			<div class="textfooters">
+				<p class="textfooterb">Web creada por Cristian Lozano</p>
+			</div>
+		</footer>
+	</body>
+</html>

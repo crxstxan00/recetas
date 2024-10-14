@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Risotto de champiñones</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina inicio de este videoclub">
+		<meta name="keywords" content="index, contacto, , , , ">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="../css/estilomovil.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/ico.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/ico.png">
+	</head>
+	<body>
+		<header>
+			<form method="POST" autocomplete="off" class="formlogin">
+				<div>
+					<label class="labellogin" for="lulogin">Usuario:</label>
+					<input type="text" class="inputlogin" id="lulogin" required="required" pattern="[a-zA-Z0-9]{4,12}" name="user" maxlength="12">
+				</div>
+				<div>
+					<label class="labellogin" for="iclogin">Contraseña:</label>
+					<input type="password" required="required" pattern="[a-zA-Z]{4,12}" class="inputlogin" id="iclogin" name="pwd" maxlength="12">
+				</div>
+				<input class="submitlogin" type="submit" name="Enviar" value="Iniciar Sesión">
+			</form>
+			<h1><a href="../index.html">Recetas de cocina</a></h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<datalist id="buscador">
+					<option value="Tomates horneados con queso panela"></option>
+					<option value="Risotto de champiñones"></option>
+					<option value="Espaguetis de calabacín sin pasta"></option>
+					<option value="Sándwich de manzana con queso"></option>
+					<option value="Pan pizza con pollo"></option>
+					<option value="Ensalada de ejotes y arándanos"></option>
+					<option value="Avena con yogurt y leche"></option>
+					<option value="Sopa de pollo"></option>
+					<option value="Pasta estilo Caprese"></option>
+					<option value="Sopa fría de calabaza y curry"></option>
+					<option value="Mini hamburguesas gourmet"></option>
+					<option value="Pasta de champiñones y espinaca"></option>
+				</datalist>
+				<input class="inputinicio" placeholder="Buscar aquí..." type="search" list="buscador" name="recetas">
+				<input type="image" src="../img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="listarecetas.html">Recetas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="subir.html">Receta a subir</a></li>
+			</ul>
+		</nav>
+		<h2>Espaguetis de calabacín sin pasta</h2>
+		<div class="gridreceta1">
+			<figure class="tomate1">
+				<img src="../img/espaguetis.jpg" alt="tomates">
+			</figure>
+			<div class="ingtitulo"><h3>Ingredientes:</h3></div>
+			<aside class="ingtomates">
+				<ul class="inglisttomates">
+					<li>1 calabacín</li>
+					<li>1/2 zanahoria</li>
+					<li>6 tomates cherrys</li>
+					<li>20 gr. albahaca</li>
+					<li>20 gr. nueces</li>
+					<li>20 gr. aceite de oliva virgen extra</li>
+					<li>1/2 aguacate</li>
+					<li>1 diente de ajo</li>
+					<li>Pimienta negra molida</li>
+					<li>Sal</li>
+				</ul>
+			</aside>
+			<div class="preptitulo"><h4>Preparación:</h4></div>
+			<aside class="preptomates">
+				Preparamos nuestro pesto vegano triturando en la picadora la albahaca, el ajo sin el gérmen, las nueces, el medio aguacate, el aceite de oliva y la sal hasta tener un pesto cremoso. Si necesitamos añadir más aceite de oliva vamos añadiendo poco a poco.
+
+				Con rallador spirelli o bien con un rallador normal, cortamos el calabacín y la zanahoria en forma de espaguetis, cortando con las tijeras de vez en cuando para que no queden demasiado largos.
+
+				En una sartén con una cucharada de aceite de oliva salteamos un par de minutos los espaguetis de verduras (sin añadirles sal para que no suelten agua y se recuezan)
+
+				Añadimos un par de cucharadas de pesto y salteamos los espaguetis junto a la salsa y los tomates cherrys cortados por la mitad, durante unos 20 segundos.
+
+				Añadimos sal y pimienta negra y servimos.
+			</aside>
+			<figure class="tomate2">
+				<img src="../img/calabacin.jpg" alt="4tomates">
+			</figure>
+			<iframe class="videot1" src="https://www.youtube.com/embed/BrnL0IHnCto" allowfullscreen></iframe>
+			<video controls="controls" class="videot2">
+				<source src="../video/espaguetis.mp4">
+			</video>
+		</div>
+		<footer class="footers">
+			<div class="textfooters">
+				<p class="textfooterb">Web creada por Cristian Lozano</p>
+			</div>
+		</footer>
+	</body>
+</html>
