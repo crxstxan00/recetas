@@ -51,7 +51,7 @@ h4{
 /*-------------------------html, body, header y footer---------------*/
 
 html{
-	background-image: url(../img/html.png);
+	background-image: url(html.png);
 	background-attachment: fixed;
 }
 
@@ -63,7 +63,7 @@ body{
 }
 
 header{
-	background-image: url(../img/header.jpg);
+	background-image: url(header.jpg);
 	background-size: cover;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -86,7 +86,7 @@ header{
 }
 
 .footers{
-	background-image: url(../img/footerb.png);
+	background-image: url(footerb.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -102,7 +102,7 @@ header{
 }
 
 .mapalist{
-	background-image: url(../img/footer.png);
+	background-image: url(footer.png);
 	background-color: grey;
 }
 
